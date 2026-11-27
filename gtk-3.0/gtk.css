@@ -1,0 +1,449 @@
+@define-color color0 #141414;
+@define-color color1 #C84B4B;
+@define-color color2 #4E8A6E;
+@define-color color3 #C9A236;
+@define-color color4 #3D7A74;
+@define-color color5 #8A5A7A;
+@define-color color6 #4C9484;
+@define-color color7 #E2E2DF;
+@define-color color8 #5C5C59;
+@define-color color9 #E05A5A;
+@define-color color10 #68B08E;
+@define-color color11 #E5C158;
+@define-color color12 #63B3A1;
+@define-color color13 #B07A9E;
+@define-color color14 #7AC7B6;
+@define-color color15 #F3F2EE;
+
+@define-color theme_bg_color #F3F2EE;
+@define-color theme_fg_color #141414;
+@define-color theme_base_color #F3F2EE;
+@define-color theme_text_color #141414;
+@define-color theme_selected_bg_color #63B3A1;
+@define-color theme_selected_fg_color #141414;
+@define-color insensitive_bg_color #E2E2DF;
+@define-color insensitive_fg_color #5C5C59;
+@define-color borders #141414;
+@define-color warning_color #C9A236;
+@define-color error_color #C84B4B;
+@define-color success_color #4E8A6E;
+
+* {
+  font-family: "Tinos Nerd Font", serif;
+  border-radius: 0px;
+  outline-style: none;
+}
+
+window.background,
+dialog.background,
+messagedialog.background {
+  background-color: #F3F2EE;
+  color: #141414;
+}
+
+window.background:backdrop,
+dialog.background:backdrop {
+  background-color: #E2E2DF;
+  color: #5C5C59;
+}
+
+decoration {
+  border-radius: 0px;
+  box-shadow: 4px 4px 0px #141414, 0px 14px 32px rgba(20, 20, 20, 0.55);
+}
+
+decoration:backdrop {
+  box-shadow: 2px 2px 0px #141414, 0px 8px 18px rgba(20, 20, 20, 0.35);
+}
+
+popover.background,
+menu,
+.menu,
+.context-menu {
+  background-color: #F3F2EE;
+  color: #141414;
+  border: 2px solid #141414;
+  border-radius: 0px;
+  box-shadow: 4px 4px 0px #141414, 0px 14px 32px rgba(20, 20, 20, 0.55);
+  padding: 4px;
+}
+
+popover.background > contents,
+popover > arrow,
+menu > arrow {
+  background-color: #F3F2EE;
+  color: #141414;
+  border: none;
+  box-shadow: none;
+}
+
+menuitem,
+modelbutton {
+  background-color: transparent;
+  color: #141414;
+  padding: 6px 10px;
+  border: 1.5px solid transparent;
+}
+
+menuitem:hover,
+menuitem:focus,
+modelbutton:hover,
+modelbutton:focus {
+  background-color: #63B3A1;
+  color: #141414;
+  border-color: #141414;
+}
+
+menuitem:disabled,
+modelbutton:disabled {
+  color: #5C5C59;
+  background-color: transparent;
+  border-color: transparent;
+}
+
+separator {
+  background-color: #141414;
+  min-height: 1.5px;
+  min-width: 1.5px;
+  margin: 4px 0px;
+}
+
+tooltip.background {
+  background-color: #E2E2DF;
+  color: #141414;
+  border: 2px solid #141414;
+  border-radius: 0px;
+  box-shadow: 3px 3px 0px #141414, 0px 10px 24px rgba(20, 20, 20, 0.45);
+  padding: 6px 8px;
+}
+
+headerbar,
+.titlebar {
+  background-color: #E2E2DF;
+  color: #141414;
+  border-bottom: 2px solid #141414;
+  border-radius: 0px;
+  min-height: 36px;
+  padding: 4px 8px;
+  box-shadow: none;
+}
+
+headerbar:backdrop,
+.titlebar:backdrop {
+  background-color: #F3F2EE;
+  color: #5C5C59;
+}
+
+headerbar button.titlebutton,
+.titlebar button.titlebutton {
+  min-width: 16px;
+  min-height: 16px;
+  padding: 0px;
+  margin: 0px 3px;
+  border: 1.5px solid #141414;
+  border-radius: 0px;
+  box-shadow: 2px 2px 0px #141414;
+  color: transparent;
+  background-image: none;
+}
+
+headerbar button.titlebutton.close,
+.titlebar button.titlebutton.close {
+  background-color: #E05A5A;
+}
+
+headerbar button.titlebutton.close:hover,
+.titlebar button.titlebutton.close:hover {
+  background-color: #C84B4B;
+}
+
+headerbar button.titlebutton.minimize,
+.titlebar button.titlebutton.minimize {
+  background-color: #E5C158;
+}
+
+headerbar button.titlebutton.minimize:hover,
+.titlebar button.titlebutton.minimize:hover {
+  background-color: #C9A236;
+}
+
+headerbar button.titlebutton.maximize,
+.titlebar button.titlebutton.maximize {
+  background-color: #63B3A1;
+}
+
+headerbar button.titlebutton.maximize:hover,
+.titlebar button.titlebutton.maximize:hover {
+  background-color: #7AC7B6;
+}
+
+headerbar button.titlebutton:active,
+.titlebar button.titlebutton:active {
+  box-shadow: 1px 1px 0px #141414;
+}
+
+button {
+  background-color: #F3F2EE;
+  color: #141414;
+  border: 1.5px solid #141414;
+  border-radius: 0px;
+  padding: 6px 12px;
+  box-shadow: 3px 3px 0px #141414;
+  background-image: none;
+}
+
+button:hover {
+  background-color: #7AC7B6;
+  color: #141414;
+}
+
+button:active,
+button:checked {
+  background-color: #63B3A1;
+  color: #141414;
+  box-shadow: 1px 1px 0px #141414;
+}
+
+button:focus {
+  border: 1.5px solid #141414;
+  box-shadow: 3px 3px 0px #141414, inset 0px 0px 0px 1px #141414;
+}
+
+button:disabled {
+  background-color: #E2E2DF;
+  color: #5C5C59;
+  border-color: #5C5C59;
+  box-shadow: none;
+}
+
+button:backdrop {
+  background-color: #E2E2DF;
+  box-shadow: 2px 2px 0px #141414;
+}
+
+button.flat {
+  background-color: transparent;
+  border-color: transparent;
+  box-shadow: none;
+}
+
+button.flat:hover {
+  background-color: #7AC7B6;
+  border-color: #141414;
+  box-shadow: 2px 2px 0px #141414;
+}
+
+button.flat:active,
+button.flat:checked {
+  background-color: #63B3A1;
+  border-color: #141414;
+  box-shadow: 1px 1px 0px #141414;
+}
+
+checkbutton check,
+radiobutton radio {
+  min-width: 15px;
+  min-height: 15px;
+  background-color: #F3F2EE;
+  border: 1.5px solid #141414;
+  border-radius: 0px;
+  box-shadow: 2px 2px 0px #141414;
+}
+
+checkbutton check:checked,
+radiobutton radio:checked {
+  background-color: #63B3A1;
+  color: #141414;
+}
+
+checkbutton check:disabled,
+radiobutton radio:disabled {
+  background-color: #E2E2DF;
+  border-color: #5C5C59;
+  box-shadow: none;
+}
+
+switch {
+  background-color: #E2E2DF;
+  border: 1.5px solid #141414;
+  border-radius: 0px;
+  box-shadow: 2px 2px 0px #141414;
+  min-width: 44px;
+  min-height: 22px;
+}
+
+switch:checked {
+  background-color: #63B3A1;
+}
+
+switch slider {
+  background-color: #F3F2EE;
+  border: 1.5px solid #141414;
+  border-radius: 0px;
+  min-width: 18px;
+  min-height: 18px;
+}
+
+entry {
+  background-color: #F3F2EE;
+  color: #141414;
+  border: 1.5px solid #141414;
+  border-radius: 0px;
+  padding: 6px 8px;
+  box-shadow: inset 2px 2px 0px #E2E2DF;
+  caret-color: #141414;
+}
+
+entry:focus {
+  border: 1.5px solid #141414;
+  box-shadow: inset 2px 2px 0px #E2E2DF, 0px 0px 0px 1px #141414;
+}
+
+entry:disabled {
+  background-color: #E2E2DF;
+  color: #5C5C59;
+  border-color: #5C5C59;
+}
+
+notebook {
+  background-color: #F3F2EE;
+  border: 1.5px solid #141414;
+}
+
+notebook > header {
+  background-color: #E2E2DF;
+  border-bottom: 2px solid #141414;
+}
+
+notebook > header tabs tab {
+  background-color: #E2E2DF;
+  color: #141414;
+  border-right: 1.5px solid #141414;
+  padding: 6px 14px;
+  box-shadow: none;
+}
+
+notebook > header tabs tab:hover {
+  background-color: #7AC7B6;
+}
+
+notebook > header tabs tab:checked {
+  background-color: #63B3A1;
+  color: #141414;
+  font-weight: bold;
+  box-shadow: inset 0px -3px 0px #141414;
+}
+
+progressbar trough {
+  background-color: #141414;
+  border: 1.5px solid #141414;
+  border-radius: 0px;
+  min-height: 12px;
+}
+
+progressbar progress {
+  background-color: #63B3A1;
+  border-radius: 0px;
+  min-height: 12px;
+}
+
+scale trough {
+  background-color: #141414;
+  border: 1.5px solid #141414;
+  border-radius: 0px;
+  min-height: 10px;
+}
+
+scale highlight {
+  background-color: #63B3A1;
+  border-radius: 0px;
+}
+
+scale slider {
+  background-color: #141414;
+  border: 1.5px solid #F3F2EE;
+  border-radius: 0px;
+  min-width: 6px;
+  min-height: 20px;
+  box-shadow: 2px 2px 0px #141414;
+}
+
+menu scale slider,
+popover scale slider {
+  min-height: 16px;
+  box-shadow: none;
+}
+
+scrollbar {
+  background-color: #E2E2DF;
+  border: 1.5px solid #141414;
+}
+
+scrollbar slider {
+  background-color: #63B3A1;
+  border: 1.5px solid #141414;
+  border-radius: 0px;
+  min-width: 12px;
+  min-height: 24px;
+}
+
+scrollbar slider:hover {
+  background-color: #7AC7B6;
+}
+
+treeview.view,
+list,
+row {
+  background-color: #F3F2EE;
+  color: #141414;
+}
+
+treeview.view:hover,
+list row:hover {
+  background-color: #E2E2DF;
+}
+
+treeview.view:selected,
+list row:selected {
+  background-color: #63B3A1;
+  color: #141414;
+}
+
+.sidebar,
+placessidebar {
+  background-color: #E2E2DF;
+  color: #141414;
+  border-right: 2px solid #141414;
+}
+
+.sidebar row:selected,
+placessidebar row:selected {
+  background-color: #63B3A1;
+  color: #141414;
+}
+
+frame > border,
+.frame {
+  border: 1.5px solid #141414;
+  border-radius: 0px;
+}
+
+infobar {
+  background-color: #E2E2DF;
+  color: #141414;
+  border: 2px solid #141414;
+  box-shadow: 3px 3px 0px #141414;
+}
+
+infobar.warning {
+  background-color: #E5C158;
+}
+
+infobar.error {
+  background-color: #E05A5A;
+}
+
+infobar.info,
+infobar.question {
+  background-color: #7AC7B6;
+}

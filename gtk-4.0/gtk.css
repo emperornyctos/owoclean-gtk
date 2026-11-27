@@ -1,0 +1,301 @@
+@define-color color0 #141414;
+@define-color color1 #C84B4B;
+@define-color color2 #4E8A6E;
+@define-color color3 #C9A236;
+@define-color color4 #3D7A74;
+@define-color color5 #8A5A7A;
+@define-color color6 #4C9484;
+@define-color color7 #E2E2DF;
+@define-color color8 #5C5C59;
+@define-color color9 #E05A5A;
+@define-color color10 #68B08E;
+@define-color color11 #E5C158;
+@define-color color12 #63B3A1;
+@define-color color13 #B07A9E;
+@define-color color14 #7AC7B6;
+@define-color color15 #F3F2EE;
+
+@define-color window_bg_color #F3F2EE;
+@define-color window_fg_color #141414;
+@define-color view_bg_color #F3F2EE;
+@define-color view_fg_color #141414;
+@define-color headerbar_bg_color #E2E2DF;
+@define-color headerbar_fg_color #141414;
+@define-color popover_bg_color #F3F2EE;
+@define-color popover_fg_color #141414;
+@define-color accent_bg_color #63B3A1;
+@define-color accent_fg_color #141414;
+@define-color accent_color #3D7A74;
+
+* {
+  font-family: "Tinos Nerd Font", serif;
+  border-radius: 0px;
+  outline-style: none;
+}
+
+window.background {
+  background-color: #F3F2EE;
+  color: #141414;
+  box-shadow: 4px 4px 0px #141414, 0px 14px 32px rgba(20, 20, 20, 0.55);
+}
+
+window.background:backdrop {
+  background-color: #E2E2DF;
+  color: #5C5C59;
+  box-shadow: 2px 2px 0px #141414, 0px 8px 18px rgba(20, 20, 20, 0.35);
+}
+
+popover.background > contents {
+  background-color: #F3F2EE;
+  color: #141414;
+  border: 2px solid #141414;
+  border-radius: 0px;
+  box-shadow: 4px 4px 0px #141414, 0px 14px 32px rgba(20, 20, 20, 0.55);
+  padding: 6px;
+}
+
+modelbutton {
+  background-color: transparent;
+  color: #141414;
+  padding: 6px 10px;
+  border: 1.5px solid transparent;
+}
+
+modelbutton:hover,
+modelbutton:focus {
+  background-color: #63B3A1;
+  color: #141414;
+  border-color: #141414;
+}
+
+tooltip.background {
+  background-color: #E2E2DF;
+  color: #141414;
+  border: 2px solid #141414;
+  box-shadow: 3px 3px 0px #141414, 0px 10px 24px rgba(20, 20, 20, 0.45);
+  padding: 6px 8px;
+}
+
+headerbar {
+  background-color: #E2E2DF;
+  color: #141414;
+  border-bottom: 2px solid #141414;
+  min-height: 36px;
+  padding: 4px 8px;
+  box-shadow: none;
+}
+
+headerbar:backdrop {
+  background-color: #F3F2EE;
+  color: #5C5C59;
+}
+
+windowcontrols > button {
+  min-width: 16px;
+  min-height: 16px;
+  padding: 0px;
+  margin: 0px 3px;
+  border: 1.5px solid #141414;
+  border-radius: 0px;
+  box-shadow: 2px 2px 0px #141414;
+  color: transparent;
+}
+
+windowcontrols > button.close {
+  background-color: #E05A5A;
+}
+
+windowcontrols > button.close:hover {
+  background-color: #C84B4B;
+}
+
+windowcontrols > button.minimize {
+  background-color: #E5C158;
+}
+
+windowcontrols > button.minimize:hover {
+  background-color: #C9A236;
+}
+
+windowcontrols > button.maximize {
+  background-color: #63B3A1;
+}
+
+windowcontrols > button.maximize:hover {
+  background-color: #7AC7B6;
+}
+
+windowcontrols > button:active {
+  box-shadow: 1px 1px 0px #141414;
+}
+
+button {
+  background-color: #F3F2EE;
+  color: #141414;
+  border: 1.5px solid #141414;
+  border-radius: 0px;
+  padding: 6px 12px;
+  box-shadow: 3px 3px 0px #141414;
+}
+
+button:hover {
+  background-color: #7AC7B6;
+}
+
+button:active,
+button:checked {
+  background-color: #63B3A1;
+  box-shadow: 1px 1px 0px #141414;
+}
+
+button:focus {
+  border: 1.5px solid #141414;
+  box-shadow: 3px 3px 0px #141414, inset 0px 0px 0px 1px #141414;
+}
+
+button:disabled {
+  background-color: #E2E2DF;
+  color: #5C5C59;
+  border-color: #5C5C59;
+  box-shadow: none;
+}
+
+checkbutton > check,
+radiobutton > radio {
+  min-width: 15px;
+  min-height: 15px;
+  background-color: #F3F2EE;
+  border: 1.5px solid #141414;
+  box-shadow: 2px 2px 0px #141414;
+}
+
+checkbutton > check:checked,
+radiobutton > radio:checked {
+  background-color: #63B3A1;
+}
+
+switch {
+  background-color: #E2E2DF;
+  border: 1.5px solid #141414;
+  box-shadow: 2px 2px 0px #141414;
+}
+
+switch:checked {
+  background-color: #63B3A1;
+}
+
+switch > slider {
+  background-color: #F3F2EE;
+  border: 1.5px solid #141414;
+}
+
+entry,
+text {
+  background-color: #F3F2EE;
+  color: #141414;
+  border: 1.5px solid #141414;
+  padding: 6px 8px;
+  box-shadow: inset 2px 2px 0px #E2E2DF;
+}
+
+entry:focus {
+  border: 1.5px solid #141414;
+  box-shadow: inset 2px 2px 0px #E2E2DF, 0px 0px 0px 1px #141414;
+}
+
+entry:disabled {
+  background-color: #E2E2DF;
+  color: #5C5C59;
+}
+
+notebook {
+  background-color: #F3F2EE;
+  border: 1.5px solid #141414;
+}
+
+notebook > header {
+  background-color: #E2E2DF;
+  border-bottom: 2px solid #141414;
+}
+
+notebook > header > tabs > tab {
+  background-color: #E2E2DF;
+  color: #141414;
+  border-right: 1.5px solid #141414;
+  padding: 6px 14px;
+}
+
+notebook > header > tabs > tab:hover {
+  background-color: #7AC7B6;
+}
+
+notebook > header > tabs > tab:checked {
+  background-color: #63B3A1;
+  font-weight: bold;
+  box-shadow: inset 0px -3px 0px #141414;
+}
+
+progressbar > trough {
+  background-color: #141414;
+  border: 1.5px solid #141414;
+  min-height: 12px;
+}
+
+progressbar > trough > progress {
+  background-color: #63B3A1;
+  min-height: 12px;
+}
+
+scale > trough {
+  background-color: #141414;
+  border: 1.5px solid #141414;
+  min-height: 10px;
+}
+
+scale > trough > highlight {
+  background-color: #63B3A1;
+}
+
+scale > trough > slider {
+  background-color: #141414;
+  border: 1.5px solid #F3F2EE;
+  min-width: 6px;
+  min-height: 20px;
+  box-shadow: 2px 2px 0px #141414;
+}
+
+scrollbar {
+  background-color: #E2E2DF;
+  border: 1.5px solid #141414;
+}
+
+scrollbar > range > trough > slider {
+  background-color: #63B3A1;
+  border: 1.5px solid #141414;
+  min-width: 12px;
+  min-height: 24px;
+}
+
+listview,
+columnview {
+  background-color: #F3F2EE;
+  color: #141414;
+}
+
+listview > row:hover,
+columnview > listview > row:hover {
+  background-color: #E2E2DF;
+}
+
+listview > row:selected,
+columnview > listview > row:selected {
+  background-color: #63B3A1;
+  color: #141414;
+}
+
+.card,
+frame {
+  background-color: #F3F2EE;
+  border: 1.5px solid #141414;
+  box-shadow: 4px 4px 0px #141414;
+}
